@@ -1,9 +1,9 @@
 ﻿namespace JogoDaVelha;
 using Tabuleiro;
 
-public class Tela
+public class Tela //Criando a classe para poder mostrar o tabuleiro na tela
 {
-    public static void ImpirmirTabuleiro(Tabuleiro tab)
+    public static void ImpirmirTabuleiro(Tabuleiro tab) // Criando o método para isto
     {
         for (int i = 0; i < tab.Linhas; i++)
         {
@@ -18,7 +18,6 @@ public class Tela
                     Console.Write($"{tab.GetPeca(i,j)} ");
                 }
             }
-
             Console.WriteLine();
         }
     }
