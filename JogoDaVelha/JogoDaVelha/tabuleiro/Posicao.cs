@@ -1,4 +1,4 @@
-﻿namespace JogoDaVelha.Tabuleiro;
+﻿namespace Tabuleiro;
 
 public class Posicao
 {
