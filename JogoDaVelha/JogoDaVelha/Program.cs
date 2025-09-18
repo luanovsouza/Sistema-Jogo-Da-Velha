@@ -9,14 +9,19 @@ public class Program
     {
         try
         {
-            var tab = new Tabuleiro(8, 8);
-        
-            tab.ColocarPeca(new Torre(Cor.Preta, tab),new Posicao(0, 0));
-            tab.ColocarPeca(new Rei(Cor.Preta, tab), new Posicao(1, 3));
-            tab.ColocarPeca(new Torre(Cor.Preta, tab), new Posicao(2, 5));
-            tab.ColocarPeca(new Rei(Cor.Preta, tab), new Posicao(0, 9));
-        
-            Tela.ImpirmirTabuleiro(tab);
+            // var tab = new Tabuleiro(8, 8);
+            //
+            // tab.ColocarPeca(new Torre(Cor.Preta, tab),new Posicao(0, 0));
+            // tab.ColocarPeca(new Rei(Cor.Preta, tab), new Posicao(1, 3));
+            // tab.ColocarPeca(new Torre(Cor.Preta, tab), new Posicao(2, 5));
+            // tab.ColocarPeca(new Rei(Cor.Preta, tab), new Posicao(0, 9));
+            //
+            // Tela.ImpirmirTabuleiro(tab);
+
+            var posX = new PosicaoXadrez('c', 7);
+            Console.WriteLine(posX);
+
+            Console.WriteLine(posX.ToPosicao());
         }
         catch (TabuleiroExceptions e)
         {
