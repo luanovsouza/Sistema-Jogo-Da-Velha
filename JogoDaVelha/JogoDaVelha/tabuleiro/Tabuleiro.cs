@@ -26,6 +26,7 @@ public class Tabuleiro
 
     public bool ExistePeca(Posicao pos)
     {
+        //Verificando se existe uma peça, se existir nao podoe colocar uma peça no mesmo lugar que a outra
         ValidarPosicao(pos);
         return Peca(pos) != null;
     }
@@ -42,6 +43,7 @@ public class Tabuleiro
 
     public bool PosicaoValida(Posicao pos)
     {
+        //Verificando se a posição é valida, ou seja, se for igual a zero ou for maior que a linha ou a coluna
         if (pos.Linha < 0 || pos.Linha >= Linhas || pos.Coluna < 0 || pos.Coluna >= Colunas)
         {
             return false;

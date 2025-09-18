@@ -16,6 +16,7 @@ public class PosicaoXadrez
 
     public Posicao ToPosicao()
     {
+        //Fazendo a conversão dos, números da matriz para os, números do Xadrez 
         return new Posicao(8 - Linha, Coluna - 'a');
     }
         
