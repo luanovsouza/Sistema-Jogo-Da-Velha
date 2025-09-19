@@ -41,6 +41,19 @@ public class Tabuleiro
         peca.Posicao = posicao;
     }
 
+    public Peca RetirarPeca(Posicao posicao)
+    {
+        if (Peca(posicao) == null)
+        {
+            return null;
+        }
+
+        var aux = Peca(posicao);
+        aux.Posicao = null;
+        Pecas[posicao.Linha, posicao.Coluna] = null;
+        return aux;
+    }
+
     public bool PosicaoValida(Posicao pos)
     {
         //Verificando se a posição é valida, ou seja, se for igual a zero ou for maior que a linha ou a coluna
